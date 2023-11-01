@@ -81,6 +81,10 @@ You can deploy this project using: **Not available**
 👤 **Afimia Fidelis Izebiafe**
 - GitHub: [@Izebiafe](https://github.com/Izbiafe)
 - LinkedIn: [Afimia Fidelis](https://linkedin.com/in/Izebiafe)
+
+👤 **Aisha Alselwi**
+- GitHub: [Aisha Alselwi](https://github.com/AlselwiAisha/)
+- LinkedIn: [Aisha Alselwi](https://www.linkedin.com/in/aisha-alselwi/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features"></a>
