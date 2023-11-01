@@ -1,5 +1,4 @@
 CREATE DATABASE clinic;
-
 -- Create patients table
 CREATE TABLE patients (
   id INT PRIMARY KEY,
@@ -7,7 +6,6 @@ CREATE TABLE patients (
   name VARCHAR(255),
   date_of_birth DATE
 );
-
 CREATE TABLE medical_histories (
   id INT PRIMARY KEY, 
   admitted_at TIMESTAMP,
@@ -15,13 +13,11 @@ CREATE TABLE medical_histories (
   status VARCHAR(255),
   FOREIGN KEY (patient_id) REFERENCES patients(id)
 );
-
 CREATE TABLE treatments (
   id INT PRIMARY KEY, 
   type VARCHAR(255),
   name VARCHAR(255)
 );
-
 CREATE TABLE invoices (
   id INT PRIMARY KEY,
   total_amount DECIMAL(10,2),
@@ -30,7 +26,6 @@ CREATE TABLE invoices (
   medical_history_id INT,
   FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id)
 );
-
 CREATE TABLE invoice_items (
   id INT PRIMARY KEY,
   unit_price DECIMAL(10,2),
@@ -42,3 +37,13 @@ CREATE TABLE invoice_items (
   FOREIGN KEY (treatment_id) REFERENCES treatments(id)
 );
 
+CREATE TABLE treatments_histories (
+  treatment_id INT PRIMARY KEY REFERENCES treatments(id),
+  medical_history_id INT PRIMARY KEY REFERENCES medical_histories(id)
+);
+
+ALTER TABLE treatments_histories ADD CONSTRAINT fk_treatment_id FOREIGN KEY (treatment_id) REFERENCES treatments(id);
+ALTER TABLE treatments_histories ADD CONSTRAINT fk_medical_history_id FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id);
+
+CREATE INDEX idx_treatment_id ON treatments_histories(treatment_id);
+CREATE INDEX idx_medical_history_id ON treatments_histories(medical_history_id);
