@@ -19,7 +19,19 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Clinic ](#-clinic-)
   - [🛠 Built With ](#-built-with-)
-    @@ -27,67 +35,110 @@ This repository includes files with plain SQL that can be used to recreate a dat
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
@@ -115,6 +127,10 @@ You can deploy this project using: **Not available**
 - GitHub: [@Izebiafe](https://github.com/Izebiafe)
 - Twitter: [@ticoniq\_](https://twitter.com/Izebiafe)
 - LinkedIn: [Izebiafe](https://linkedin.com/in/Izebiafe)
+
+👤 **Aisha Alselwi**
+- GitHub: [Aisha Alselwi](https://github.com/AlselwiAisha/)
+- LinkedIn: [Aisha Alselwi](https://www.linkedin.com/in/aisha-alselwi/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
