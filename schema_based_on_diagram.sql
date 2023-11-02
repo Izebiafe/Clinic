@@ -52,4 +52,21 @@ ALTER TABLE treatments_histories ADD CONSTRAINT fk_medical_history_id FOREIGN KE
 
 CREATE INDEX idx_treatment_id ON treatments_histories(treatment_id);
 CREATE INDEX idx_medical_history_id ON treatments_histories(medical_history_id);
+-- Create an index on the 'patient_id' foreign key in the Medical_History table
+CREATE INDEX ON Medical_History (patient_id);
+
+-- Create an index on the 'medical_history_id' foreign key in the Invoices table
+CREATE INDEX ON Invoices (medical_history_id);
+
+-- Create an index on the 'invoice_id' foreign key in the Invoices_Items table
+CREATE INDEX ON Invoices_Items (invoice_id);
+
+-- Create an index on the 'treatment_id' foreign key in the Invoices_Items table
+CREATE INDEX ON Invoices_Items (treatment_id);
+
+-- Create an index on the 'medical_history_id' foreign key in the Medical_History_Treatments junction table
+CREATE INDEX ON Medical_History_Treatments (medical_history_id);
+
+-- Create an index on the 'treatment_id' foreign key in the Medical_History_Treatments junction table
+CREATE INDEX ON Medical_History_Treatments (treatment_id);
 
